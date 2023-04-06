@@ -14,7 +14,7 @@ function Product() {
                             <NavLink to="shirt" className={activeStyle}>Shirts</NavLink>
                         </li>
                         <li className='mx-2 mb-8'>
-                            <NavLink to="jeans" className={activeStyle}>Jeans</NavLink>
+                            <NavLink to="/jeans" className={activeStyle}>Jeans</NavLink>
                         </li>
                     </ul>
                 </nav>

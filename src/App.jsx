@@ -8,6 +8,9 @@ import PageNotFound from './component/PageNotFound';
 import Product from './component/Product';
 import Shirt from './component/products/Shirt';
 import Jeans from './component/products/Jeans';
+import Users from './component/Users';
+import UserDetail from './component/UserDetail';
+import Admin from './component/Admin';
 
 function App() {
   return (
@@ -23,6 +26,13 @@ function App() {
           <Route path='shirt' element={<Shirt />} />
           <Route path = 'jeans' element={<Jeans />} />
         </Route>
+        <Route path='/user' element={<Users />} >
+          <Route path=':id' element={<UserDetail />} />
+          </Route>
+          {/* </Route> */}
+        {/* <Route path='/user/2' element={<UserDetail />} />
+        <Route path='/user/3' element={<UserDetail />} /> */}
+        <Route path='/user/admin' element={<Admin />} />
         <Route path='*' element={<PageNotFound/>} />
       </Routes>
     </>
