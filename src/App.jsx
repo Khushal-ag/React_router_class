@@ -24,16 +24,16 @@ function App() {
         <Route path='/product' element={<Product />}>
           <Route index element={<Shirt />} />
           <Route path='shirt' element={<Shirt />} />
-          <Route path = 'jeans' element={<Jeans />} />
+          <Route path='jeans' element={<Jeans />} />
         </Route>
         <Route path='/user' element={<Users />} >
           <Route path=':id' element={<UserDetail />} />
-          </Route>
-          {/* </Route> */}
+        </Route>
+        {/* </Route> */}
         {/* <Route path='/user/2' element={<UserDetail />} />
         <Route path='/user/3' element={<UserDetail />} /> */}
         <Route path='/user/admin' element={<Admin />} />
-        <Route path='*' element={<PageNotFound/>} />
+        <Route path='*' element={<PageNotFound />} />
       </Routes>
     </>
   );
